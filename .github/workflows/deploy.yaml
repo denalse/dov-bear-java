@@ -11,9 +11,9 @@ jobs:
       - name: Checkout src
         uses: actions/checkout@v2
       - name: Deploy
-        uses: akhileshns/heroku-deploy#3.12.12
+        uses: akhileshns/heroku-deploy@3.12.12
         with:
           heroku_api_key: ${{ secrets.heroku_api_key }}
           heroku_app_name: "my-dov-app"
           heroku_email: ${{ secrets.email }}
-          branch: ${{ github.ref_name }}
+          branch: ${{ github.ref_name}}
